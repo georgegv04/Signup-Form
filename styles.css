@@ -195,6 +195,10 @@ input::placeholder {
   color: #9ca3af;
 }
 
+.validate-pw:invalid {
+  border: solid 1px red;
+}
+
 .right-section {
   display: flex;
   flex-direction: column;
