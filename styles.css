@@ -87,7 +87,7 @@ body {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
 
   max-width: 760px;
   width: 100%;
@@ -108,12 +108,14 @@ body {
   font-size: 0.8rem;
   line-height: 1.6;
   color: #073763;
+  margin-top: 0.75rem;
 }
 
 .signup-heading {
   font-size: 1.8rem;
   font-weight: 700;
   color: #073763;
+  margin-top: 0.75rem;
 }
 
 .form-card {
@@ -214,4 +216,17 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  width: min(80%, 250px);
+  color: white;
+  background-color: #1e3a8a;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  border: 1px solid #1e3a8a;
+  font-weight: bold;
+  font-style: "Inter", sans-serif;
+  cursor: pointer;
 }
