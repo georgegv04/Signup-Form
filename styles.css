@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eef4fb;
+  color: #1e293b;
+}
+
 .signup-page {
   display: flex;
   min-height: 100vh;
@@ -24,6 +30,9 @@
 .signup-content {
   width: 60%;
   background-color: #eef3f8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .hero-logo-card {
@@ -80,20 +89,23 @@
   flex-direction: column;
   gap: 2rem;
 
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  max-width: 760px;
+  width: 100%;
+
+  margin: 0;
+  padding-top: 4.5rem;
+  padding-left: 5.5rem;
 }
 
 .intro-main {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #073763;
   font-weight: 500;
 }
 
 .intro-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
   color: #073763;
 }
@@ -102,4 +114,104 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: #073763;
+}
+
+.form-card {
+  border: none;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 36px 36px;
+  width: 760px;
+  max-width: 760px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 32px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  margin: 0;
+}
+
+legend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e3a8a;
+
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+legend::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d6dce5;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #1e3a8a; /* soft navy */
+  font-weight: 600;
+}
+
+input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d6dce5;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+  color: #1e293b;
+  background-color: #f9fafb;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* controls spacing cleanly */
+}
+
+.checkbox-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.terms {
+  margin: 0;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
